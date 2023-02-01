@@ -8,7 +8,6 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    margin-bottom: 90px;
 }
 
 .logo{
@@ -20,7 +19,7 @@ body{
 
 .container{
     width: 940px;
-    height: auto;
+    height: 590px;
     position: relative;
     margin: 0px auto;
     padding: 20px;
@@ -29,7 +28,7 @@ body{
 
 .entrada{
     width: 600px;
-    height: auto;
+    height: 590px;
     text-align: center;
 }
 
@@ -39,11 +38,12 @@ body{
     resize: none;
     outline: none;
     background: #F3F5FC;
+    height: 500px;
 }
 
 #output{
     width: 300px;
-    height: 80px;
+    height: 110px;
     font-size: 18px;
     margin: 10px 0;
 }
@@ -83,8 +83,7 @@ body{
 
 .copiar{
     position: relative;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin-top: 115px;
     width: 200px;
     height: 40px;
     font-size: 20px;
@@ -105,7 +104,7 @@ body{
     right: 0;
     top: 20px;
     width: 300px;
-    height: auto;
+    height: 590px;
     position: absolute;
     display: inline-block;
     margin-left: 20px;
@@ -132,4 +131,39 @@ footer{
     height: 30px;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+@media screen and (max-height:720px) {
+    .container{
+        height: 370px;
+    }
+
+    .body{
+        margin-bottom: 20px;
+    }
+
+    .salida, .entrada{
+        height: 370px;
+    }
+
+    .input{
+        height: 280px;
+    }
+
+    .imagen{
+        width: 150px;
+        height: 100px;
+    }
+
+    #texto-ningun{
+        font-size: 15px;
+    }
+
+    #texto-ref{
+        font-size: 12px;
+    }
+
+    .copiar{
+        margin-top: 45px;
+    }
 }
