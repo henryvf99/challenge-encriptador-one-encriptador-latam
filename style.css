@@ -150,6 +150,10 @@ footer{
         height: 280px;
     }
 
+    #output{
+        height: 90px;
+    }
+
     .imagen{
         width: 150px;
         height: 100px;
@@ -164,6 +168,6 @@ footer{
     }
 
     .copiar{
-        margin-top: 45px;
+        margin-top: 5px;
     }
 }
