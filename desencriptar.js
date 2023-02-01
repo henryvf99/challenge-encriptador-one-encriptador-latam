@@ -17,13 +17,19 @@ function desencriptar(mensajeEncriptado){
 }
 
 function mostrarDesencriptado(){
-    var entradaD = inputD.value.toLowerCase()
-    txtDesencriptado = desencriptar(entradaD);
-    document.querySelector("#output").innerHTML = txtDesencriptado;
-    document.getElementById('copiar').style.visibility = "visible";
-    document.getElementById('imagen').style.visibility = "hidden";
-    document.getElementById('texto-ningun').style.visibility = "hidden";
-    document.getElementById('texto-ref').style.visibility = "hidden";
+    var entradaD = inputD.value.toLowerCase();
+    if(entradaD == ""){
+        alert("Por favor ingrese su texto");
+        document.getElementById('aviso').style.color = "red";
+    }else{
+        document.getElementById('aviso').style.color = "black";
+        txtDesencriptado = desencriptar(entradaD);
+        document.querySelector("#output").innerHTML = txtDesencriptado;
+        document.getElementById('copiar').style.visibility = "visible";
+        document.getElementById('imagen').style.visibility = "hidden";
+        document.getElementById('texto-ningun').style.visibility = "hidden";
+        document.getElementById('texto-ref').style.visibility = "hidden";
+    }
 }
 
 botonD.onclick = mostrarDesencriptado;

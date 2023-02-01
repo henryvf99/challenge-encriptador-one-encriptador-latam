@@ -32,12 +32,18 @@ function encriptar(mensaje){
 
 function mostrarEncriptado(){
     var entradaE = inputE.value.toLowerCase()
-    txtEncriptado = encriptar(entradaE);
-    document.querySelector("#output").innerHTML = txtEncriptado;
-    document.getElementById('copiar').style.visibility = "visible";
-    document.getElementById('imagen').style.visibility = "hidden";
-    document.getElementById('texto-ningun').style.visibility = "hidden";
-    document.getElementById('texto-ref').style.visibility = "hidden";
+    if(entradaE == ""){
+        alert("Por favor ingrese su texto");
+        document.getElementById('aviso').style.color = "red";
+    }else{
+        document.getElementById('aviso').style.color = "black";
+        txtEncriptado = encriptar(entradaE);
+        document.querySelector("#output").innerHTML = txtEncriptado;
+        document.getElementById('copiar').style.visibility = "visible";
+        document.getElementById('imagen').style.visibility = "hidden";
+        document.getElementById('texto-ningun').style.visibility = "hidden";
+        document.getElementById('texto-ref').style.visibility = "hidden";
+    }
 }
 
 botonE.onclick = mostrarEncriptado;
