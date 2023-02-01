@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" sizes="32x32">
+    <title>Decifrador</title>
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">a</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="entrada">
+                <textarea autofocus class="input" name="input" id="input" cols="50" rows="17" onkeypress="return check(event)" placeholder="Ingrese el texto aquí"></textarea>
+                <button class="boton" id="botonE">Encriptar</button>
+                <button class="boton" id="botonD">Desencriptar</button>
+            </div>
+            <div class="salida">
+                <div class="texto-ref" id="output"></div>
+                <img class="imagen" id="imagen" src="img/personaje.png" alt="">
+                <p class="texto-ref" id="texto-ningun">Ningún mensaje fue encontrado</p>
+                <p class="texto-ref" id="texto-ref">Ingresa el texto que desees encriptar o desencriptar</p>
+                <button class="copiar" id="copiar" style="visibility:hidden;">copiar</button>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <p>Design by Henry Velezmoro F.</p>
+        <a href="https://github.com/henryvf99"><img class="img-footer" src="img/github.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/henryvelezmorofranco/"><img class="img-footer" src="img/linkedin.png" alt=""></a>
+    </footer>
+    
+    <script src="encriptar.js"></script>
+    <script src="desencriptar.js"></script>
+    <script src="verificar-entrada.js"></script>
+    <script src="copiar-texto.js"></script>
+</body>
+</html>

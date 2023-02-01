@@ -1,0 +1,135 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body{
+    background: #F3F5FC;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    margin-bottom: 90px;
+}
+
+.logo{
+    font-size: 90px;
+    font-weight: bold;
+    color: #0A3871;
+    margin-left: 100px;
+}
+
+.container{
+    width: 940px;
+    height: auto;
+    position: relative;
+    margin: 0px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.entrada{
+    width: 600px;
+    height: auto;
+    text-align: center;
+}
+
+.input{
+    border: none;
+    font-size: 20px;
+    resize: none;
+    outline: none;
+    background: #F3F5FC;
+}
+
+#output{
+    width: 300px;
+    height: 80px;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.texto-ref{
+    margin: 10px 0;
+}
+
+#texto-ningun{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.boton{
+    margin-top: 15px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    border-color: #ffffff00;
+    font-weight: bold;
+}
+
+.boton:hover{
+    background: #0A3871;
+    color: #ffffff;
+}
+
+#botonE{
+    margin-right: 85px;
+}
+
+#botonD{
+    margin-left: 85px;
+}
+
+.copiar{
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    border-color: #000000;
+    font-weight: bold;
+}
+
+.copiar:hover{
+    background: #0A3871;
+    color: #ffffff;
+    border-color: #ffffff00;
+}
+
+.salida{
+    background: #ffffff;
+    right: 0;
+    top: 20px;
+    width: 300px;
+    height: auto;
+    position: absolute;
+    display: inline-block;
+    margin-left: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.imagen{
+    width: 200px;
+    height: 200px;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+.img-footer{
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
