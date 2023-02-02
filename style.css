@@ -47,10 +47,10 @@ body{
 }
 
 #output{
-    width: 300px;
+    width: 280px;
     height: 110px;
     font-size: 18px;
-    margin: 10px 0;
+    margin: 10px 10px;
 }
 
 .texto-ref{
@@ -88,7 +88,7 @@ body{
 
 .copiar{
     position: relative;
-    margin-top: 115px;
+    margin-top: 75px;
     width: 200px;
     height: 40px;
     font-size: 20px;
@@ -120,6 +120,7 @@ body{
 .imagen{
     width: 200px;
     height: 200px;
+    margin-top: 10px;
 }
 
 footer{
@@ -138,7 +139,9 @@ footer{
     margin-right: 5px;
 }
 
-@media screen and (max-height:720px) {
+/*Computadoras con altura de 720px*/
+
+@media screen and (max-height:750px) {
     .container{
         height: 370px;
     }
@@ -174,5 +177,182 @@ footer{
 
     .copiar{
         margin-top: 5px;
+    }
+}
+
+/*Teléfono*/
+
+@media screen and (max-width:500px) {
+    .container{
+        padding: 0;
+        width: 350px;
+        height: 500px;
+    }
+
+    .body{
+        margin-bottom: 20px;
+    }
+
+    .logo{
+        font-size: 50px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .entrada{
+        width: 350px;
+        height: 250px;
+    }
+
+    .salida{
+        width: 350px;
+        height: 250px;
+        display: block;
+        position: relative;
+        margin: 0;
+    }
+
+    .input{
+        width: 300px;
+        height: 100px;
+    }
+
+    .aviso{
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #botonE{
+        margin: 10px 0;
+    }
+
+    #botonD{
+        margin-top: 5px;
+        margin-left: 75px;
+        display: block;
+    }
+
+    #output{
+        width: 300;
+        height: 100px;
+        margin: 5px 25px;
+        position: absolute;
+    }
+
+    .imagen{
+        margin-top: 50px;
+        width: 150px;
+        height: 100px;
+    }
+
+    .texto-ref{
+        position: absolute;
+    }
+
+    #texto-ningun{
+        margin-left: 70px;
+        font-size: 15px;
+    }
+
+    #texto-ref{
+        margin-top: 30px;
+        margin-left: 35px;
+        font-size: 12px;
+    }
+
+    .copiar{
+        margin-top: 40px;
+    }
+}
+
+/*Tablet*/
+
+@media screen and (max-width:900px) and (min-width:600px) {
+    .container{
+        padding: 0;
+        width: 700px;
+        height: 750px;
+    }   
+
+    .body{
+        margin-bottom: 20px;
+    }
+
+    .logo{
+        font-size: 50px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .entrada{
+        width: 100%;
+        height: 400px;
+    }
+
+    .salida{
+        width: 100%;
+        height: 300px;
+        display: block;
+        position: relative;
+        margin: 0;
+    }
+
+    .input{
+        width: 650px;
+        height: 250px;
+    }
+
+    .aviso{
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #botonE{
+        margin: 10px 0;
+    }
+
+    #botonD{
+        margin-top: 5px;
+        margin-left: 250px;
+        display: block;
+    }
+
+    #output{
+        width: 650px;
+        height: 100px;
+        margin: 5px 25px;
+        position: absolute;
+    }
+
+    .imagen{
+        margin-top: 100px;
+        margin-left: -300px;
+        width: 150px;
+        height: 100px;
+        display: inline;
+    }
+
+    .texto-ref{
+        position: absolute;
+    }
+
+    #texto-ningun{
+        margin-top: 130px;
+        margin-left: 70px;
+        font-size: 15px;
+        display: inline;
+    }
+
+    #texto-ref{
+        margin-top: 150px;
+        margin-left: 35px;
+        font-size: 12px;
+        display: inline;
+    }
+
+    .copiar{
+        margin-top: 50px;
+        margin-left: 250px;
+        display: block;
     }
 }
