@@ -178,7 +178,7 @@ footer{
     .container{
         padding: 0;
         width: 350px;
-        height: 500px;
+        height: 520px;
     }
 
     .body{
@@ -254,6 +254,10 @@ footer{
 
     .copiar{
         margin-top: 40px;
+    }
+
+    footer{
+        margin-top: 15px;
     }
 }
 
